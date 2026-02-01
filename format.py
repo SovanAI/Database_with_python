@@ -5,7 +5,7 @@ c = conn.cursor()
 print("Database connected successfully!")
 
 #Query to the datrabase
-c.execute("SELECT * FROM customers")
+c.execute("SELECT rowid, * FROM customers")
 print(c.fetchone())
 print("The one data is fetched successfully")
 
